@@ -1,0 +1,256 @@
+/*
+Author : Ozih Uddin Al Fuzayel
+Date : 05 August 2025
+Time : 10:10 PM .
+*/
+
+:root {
+            --primary: #faf8ff;
+            --secondary: #0f172a;
+            --accent: #af0909;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --dark: #faf8ff; /* I wrote it dark , that's why i can't change it */
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #334155;
+            background: linear-gradient(135deg, #f0f4ff, #ffffff);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Modern Navbar */
+        .navbar {
+            background: rgba(48, 32, 117, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .navbar.scrolled {
+            padding: 0.7rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .navbar-brand {
+            font-weight: 800;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+        }
+        
+        .nav-link {
+            font-weight: 600;
+            color: var(--dark) !important;
+            padding: 0.5rem 1.2rem !important;
+            margin: 0 0.1rem;
+            border-radius: 6px;
+            transition: var(--transition);
+            position: relative;
+            font-size: 1rem;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 70%;
+        }
+        
+        .nav-link.active {
+            color: var(--primary) !important;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            box-shadow: none !important;
+            background-color: var(--light);
+        }
+        
+        .btn-nav {
+            background: linear-gradient(135deg, var(--accent));
+            color: #faf8ff !important;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.6rem 1.5rem;
+            transition: var(--transition);
+            border: none;
+            box-shadow: 0 4px 10px rgba(24, 78, 194, 0.3);
+        }
+        
+        .btn-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(14, 49, 124, 0.4);
+        }
+        
+        /* Modern Footer */
+        .footer {
+            background: rgba(48, 32, 117, 0.98);
+            color: #faf8ff;
+            padding-top: 5rem;
+            margin-top: auto;
+        }
+        
+        .footer h5 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+        
+        .footer h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #d2d0d8;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-links a i {
+            margin-right: 10px;
+            color: #d2d0d8;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+            padding-left: 5px;
+        }
+        
+        .contact-info li {
+            display: flex;
+            margin-bottom: 1.2rem;
+            align-items: flex-start;
+        }
+        
+        .contact-info i {
+            color: #d2d0d8;
+            margin-right: 15px;
+            font-size: 1.2rem;
+            min-width: 20px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+        
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .navbar-collapse {
+                background: #222;
+                padding: 1.5rem;
+                border-radius: 16px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                margin-top: 1rem;
+            }
+            
+            .nav-link {
+                margin: 0.5rem 0;
+            }
+
+        }
+        
+        @media (max-width: 768px) {
+            .footer-col {
+                margin-bottom: 2.5rem;
+            }
+
+            .navbar img{
+                width: 250px;
+            }
+            
+            .stat-item {
+                margin-bottom: 2rem;
+            }
+        }

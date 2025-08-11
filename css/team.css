@@ -1,0 +1,55 @@
+/*
+Author: Ozih Uddin Al Fuzayel
+Date: 06/08/2025
+Time: 7:59 pm
+*/
+
+.team-section {
+      padding: 80px 0;
+    }
+
+    .ceo-quote {
+      background: #fff;
+      border-left: 5px solid #af0909;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    }
+
+    .ceo-quote img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .team-card {
+      transition: all 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-card .card-body {
+      text-align: center;
+    }
+
+    .team-card .card-img-top {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin: 20px auto 10px;
+    }
+
+    .team-role {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .fa-users{
+        color: #af0909;
+    }

@@ -1,0 +1,94 @@
+/*Author: Ozih Uddin Al Fuzayel
+Date: 06/08/2025
+Time: 6:00 PM
+*/
+
+.section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info-box {
+      background: #faf8ff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      border: 1px solid #e0e6ed;
+    }
+
+    .contact-info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info-box h5 {
+      color: #af0909;
+      margin-bottom: 15px;
+    }
+
+    .contact-info-box p {
+      margin: 6px 0;
+    }
+
+    .icon {
+      color: #af0909;
+      margin-right: 8px;
+    }
+
+    .fa-paper-plane, .fa-headset{
+        color: #af0909 ;
+    }
+
+    .form-control,
+    .form-control:focus {
+      background: #f1f5f9;
+      border: 1px solid #ced4da;
+      color: #333;
+      border-radius: 8px;
+    }
+
+    .btn-send {
+      background: #af0909;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 30px;
+      transition: 0.3s ease-in-out;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+    }
+
+    .btn-send:hover {
+      background: #123;
+      color: #faf8ff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+    }
+
+    .form-section {
+      background: #ffffffc4;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .contact-info-box {
+        padding: 20px;
+      }
+
+      .form-section {
+        padding: 25px;
+      }
+    }
